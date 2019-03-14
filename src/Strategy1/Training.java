@@ -9,6 +9,11 @@ package Strategy1;
  *
  * @author user
  */
-public class Training {
+public class Training implements Activity{
+
+    @Override
+    public void justDoIt() {
+System.out.println("training...");
+    }
     
 }

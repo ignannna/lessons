@@ -9,6 +9,11 @@ package Strategy1;
  *
  * @author user
  */
-public class Sleeping {
+public class Sleeping implements Activity{
+
+    @Override
+    public void justDoIt() {
+System.out.println("sleeping...");
+    }
     
 }

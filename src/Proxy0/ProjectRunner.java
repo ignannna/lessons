@@ -3,13 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Strategy1;
+package Proxy0;
 
 /**
  *
  * @author user
  */
-public interface Activity {
-    public void justDoIt();
+public class ProjectRunner {
+    public static void main(String[] args) {
+        
+        Project project = new RealProject("https: //www.github/me/myProject.git");
+        
+        project.run();
+    }
     
 }

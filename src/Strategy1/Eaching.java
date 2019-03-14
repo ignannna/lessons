@@ -9,6 +9,11 @@ package Strategy1;
  *
  * @author user
  */
-public class Eaching {
+public class Eaching implements Activity{
+
+    @Override
+    public void justDoIt() {
+        System.out.println("eaching...");
+    }
     
 }

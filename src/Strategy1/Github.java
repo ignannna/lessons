@@ -9,7 +9,12 @@ package Strategy1;
  *
  * @author user
  */
-public interface Activity {
-    public void justDoIt();
+public class Github implements Activity{
+
+    @Override
+    public void justDoIt() {
+    System.out.println("send cood Github...");
+
+    }
     
 }

@@ -1,0 +1,35 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package State1;
+
+import Strategy1.*;
+
+/**
+ *
+ * @author user
+ */
+public class DeveloperDay {
+    public static void main(String[] args) {
+        
+        Activity activity = new Sleeping();
+        
+        Developer developer = new Developer();
+        
+        Eaching eaching = new Eaching();
+        
+        Github github = new Github();
+        
+        developer.setActivity(activity);
+        
+        for (int i = 0; i < 10; i++) {
+            developer.justDoIt();
+            developer.changeActivity();
+            
+        }
+        
+    }
+    
+}

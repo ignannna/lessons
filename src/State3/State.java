@@ -3,13 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Strategy1;
+package State3;
 
 /**
  *
  * @author user
  */
-public interface Activity {
-    public void justDoIt();
+public interface State {
+    
+    public void insertQuarter();
+    public void ejectQuarter();
+    public void turnCrank();
+    public void dispense();
+    
+    public void refill();
     
 }
